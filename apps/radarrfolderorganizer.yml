@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Title:      PGBlitz (Reference Title File)
-# Author(s):  Admin9705
+# Author(s):  notorius28
 # URL:        https://pgblitz.com - http://github.pgblitz.com
 # GNU:        General Public License v3.0
 ################################################################################
@@ -39,7 +39,6 @@
           - '/opt/appdata/{{pgrole}}/Config.txt:/Config.txt'
           - '{{path.stdout}}:{{path.stdout}}'
           - '/etc/localtime:/etc/localtime:ro'
-          - '/mnt:/mnt'
 
     - name: 'Setting PG ENV'
       set_fact:
