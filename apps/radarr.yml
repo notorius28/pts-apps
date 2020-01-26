@@ -39,7 +39,7 @@
     - name: 'Setting PG Volumes'
       set_fact:
         pg_volumes:
-          - '/opt/appdata/{{pgrole}}/mp4_automator:/usr/local/bin/sma/sickbeard_mp4_automator'
+          - '/opt/appdata/sma/autoProcess.ini:/usr/local/bin/sma/sickbeard_mp4_automator/autoProcess.ini:ro'
           - '/opt/appdata/{{pgrole}}:/config'
           - '{{path.stdout}}:{{path.stdout}}'
 
