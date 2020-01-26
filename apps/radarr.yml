@@ -16,7 +16,7 @@
         pgrole: 'radarr'
         intport: '7878'
         extport: '7878'
-        image: 'mdhiggins/radarr-sma'
+        image: 'mdhiggins/radarr-sma:latest'
 
     # CORE (MANDATORY) ############################################################
     - name: 'Including cron job'
