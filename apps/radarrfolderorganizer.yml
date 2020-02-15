@@ -14,7 +14,7 @@
     - name: 'Set Known Facts'
       set_fact:
         pgrole: 'radarr-folder-organizer'
-        image: 'rubasace/radarr-folder-organizer'
+        image: 'notorius28/radarr-folder-organizer'
 
     # CORE (MANDATORY) ############################################################
     - name: 'Including cron job'
