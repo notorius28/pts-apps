@@ -13,7 +13,7 @@
 
     - name: 'Set Known Facts'
       set_fact:
-        pgrole: 'sonarr'
+        pgrole: 'amule'
         intport: '4712'
         extport: '4712'
         intport2: '4462'
