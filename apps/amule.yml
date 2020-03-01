@@ -20,7 +20,7 @@
         extport2: '4662'
         intport3: '4672'
         extport3: '4672'
-        image: 'notorius28/tchabaud/amule:latest'
+        image: 'tchabaud/amule:latest'
 
     # CORE (MANDATORY) ############################################################
     - name: 'Including cron job'
