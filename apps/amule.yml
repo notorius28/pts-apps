@@ -54,7 +54,7 @@
         pg_env:
           PUID: '1000'
           PGID: '1000'
-          WEBUI_TEMPLATE: 'AmuleWebUI-Reloaded'
+          #WEBUI_TEMPLATE: 'AmuleWebUI-Reloaded'
           WEBUI_PWD: 'amule'
 
     # MAIN DEPLOYMENT #############################################################
