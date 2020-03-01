@@ -46,6 +46,9 @@
           - '{{path.stdout}}/downloads/{{pgrole}}/:/incoming'
           - '{{path.stdout}}/incomplete/{{pgrole}}/:/temp'
 
+    - name: 'Granting permissoms'
+      file: 'path=/opt/appdata/{{pgrole}} state=directory mode=0775 owner=1000 group=1000'
+
     - name: 'Setting PG ENV'
       set_fact:
         pg_env:
