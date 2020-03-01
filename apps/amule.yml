@@ -43,8 +43,8 @@
         pg_volumes:
           - '/opt/appdata/{{pgrole}}:/home/amule/.aMule'
           - '{{path.stdout}}:{{path.stdout}}'
-          - '{{path.stdout}}/downloads/{{pgrole}}/:/incoming'
-          - '{{path.stdout}}/incomplete/{{pgrole}}/:/temp'
+          - '{{path.stdout}}/downloads/{{pgrole}}:/incoming'
+          - '{{path.stdout}}/incomplete/{{pgrole}}:/temp'
 
     - name: 'Granting permissoms'
       file: 'path=/opt/appdata/{{pgrole}} state=directory mode=0775 owner=1000 group=1000'
@@ -54,7 +54,7 @@
         pg_env:
           PUID: '1000'
           PGID: '1000'
-          #WEBUI_TEMPLATE: 'AmuleWebUI-Reloaded'
+          WEBUI_TEMPLATE: 'AmuleWebUI-Reloaded'
           WEBUI_PWD: 'amule'
 
     # MAIN DEPLOYMENT #############################################################
