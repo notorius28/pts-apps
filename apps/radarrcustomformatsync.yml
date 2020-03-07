@@ -14,7 +14,7 @@
     - name: 'Set Known Facts'
       set_fact:
         pgrole: 'radarr-custom-format-sync'
-        image: 'rubasace/radarr-custom-format-sync'
+        image: 'notorius28/radarr-custom-format-sync'
 
     # CORE (MANDATORY) ############################################################
     - name: 'Including cron job'
