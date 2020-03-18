@@ -19,7 +19,7 @@
         intport2: '4662'
         extport2: '4662'
         intport3: '4672'
-        extport3: '4672/udp'
+        extport3: '"4672/udp"'
         image: 'tchabaud/amule:latest'
 
     # CORE (MANDATORY) ############################################################
