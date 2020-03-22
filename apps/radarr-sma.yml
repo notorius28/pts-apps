@@ -36,6 +36,7 @@
         pg_volumes:
           - '/opt/appdata/{{pgrole}}:/config'
           - '/opt/appdata/sma:/usr/local/sma/config'
+          - '/opt/appdata/pp_sma:/usr/local/sma/post_process'
           - '{{path.stdout}}:{{path.stdout}}'
           - '/etc/localtime:/etc/localtime:ro'
 
