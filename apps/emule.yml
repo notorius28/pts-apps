@@ -53,8 +53,6 @@
           UID: '1000'
           GID: '1000'
           EMULE_LANGUAGE: '1034'
-          WEBUI_TEMPLATE: 'AmuleWebUI-Reloaded'
-          WEBUI_PWD: 'amule'
 
     # MAIN DEPLOYMENT #############################################################
 
