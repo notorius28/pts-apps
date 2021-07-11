@@ -14,7 +14,7 @@
           set_fact:
             pgrole: 'trailerdownloader'
             intport: '6767'
-            extport: '80'
+            extport: '6767'
             image: 'taylorbobaylor/movie-trailer-downloader'
     
         # CORE (MANDATORY) ############################################################
