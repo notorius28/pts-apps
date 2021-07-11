@@ -13,7 +13,7 @@
         - name: 'Set Known Facts'
           set_fact:
             pgrole: 'trailerdownloader'
-            intport: '6767'
+            intport: '80'
             extport: '6767'
             image: 'taylorbobaylor/movie-trailer-downloader'
     
