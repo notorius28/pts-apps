@@ -13,7 +13,7 @@
     - name: 'Set Known Facts'
       set_fact:
         pgrole: 'bazarr4k'
-        intport: '6764'
+        intport: '6767'
         extport: '6764'
         image: 'linuxserver/bazarr:latest'
 
