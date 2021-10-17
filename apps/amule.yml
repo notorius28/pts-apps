@@ -19,8 +19,8 @@
         intport2: '4662'
         extport2: '4662'
         intport3: '4672'
-        extport3: '4672'
-        image: 'tchabaud/amule:latest'
+        extport3: '4672/udp'
+        image: 'tetreum/amule:latest'
 
     # CORE (MANDATORY) ############################################################
     - name: 'Including cron job'
@@ -41,10 +41,10 @@
     - name: 'Setting PG Volumes'
       set_fact:
         pg_volumes:
-          - '/opt/appdata/{{pgrole}}:/home/amule/.aMule'
+          - '/opt/appdata/{{pgrole}}:/home/amule/.aMule/conf'
           - '{{path.stdout}}:{{path.stdout}}'
-          - '{{path.stdout}}/downloads/{{pgrole}}:/incoming'
-          - '{{path.stdout}}/incomplete/{{pgrole}}:/temp'
+          - '{{path.stdout}}/downloads/{{pgrole}}:/home/amule/.aMule/incoming'
+          - '{{path.stdout}}/incomplete/{{pgrole}}:/home/amule/.aMule/tmp'
 
     - name: 'Granting permissoms'
       file: 'path=/opt/appdata/{{pgrole}} state=directory mode=0775 owner=1000 group=1000'
