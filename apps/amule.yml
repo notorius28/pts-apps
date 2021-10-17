@@ -41,7 +41,7 @@
     - name: 'Setting PG Volumes'
       set_fact:
         pg_volumes:
-          - '/opt/appdata/{{pgrole}}:/home/amule/.aMule/conf'
+          - '/opt/appdata/{{pgrole}}:/home/amule/.aMule'
           - '{{path.stdout}}:{{path.stdout}}'
           - '{{path.stdout}}/downloads/{{pgrole}}:/home/amule/.aMule/incoming'
           - '{{path.stdout}}/incomplete/{{pgrole}}:/home/amule/.aMule/tmp'
