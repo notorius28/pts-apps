@@ -18,8 +18,8 @@
         extport: '4711'
         intport2: '4662'
         extport2: '4662'
-        intport3: '4672'
-        extport3: '4672/udp'
+        intport3: '4672/udp'
+        extport3: '4672'
         image: 'tetreum/amule:latest'
 
     # CORE (MANDATORY) ############################################################
